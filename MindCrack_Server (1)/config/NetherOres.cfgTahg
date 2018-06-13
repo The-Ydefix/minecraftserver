@@ -1,0 +1,102 @@
+# Configuration file
+
+####################
+# block
+####################
+
+block {
+    I:ID.NetherOreBlock=3139
+}
+
+
+####################
+# general
+####################
+
+general {
+    # If true, when NetherOres are mined, nearby pigmen become angry to the player.
+    B:AngryPigmenEnable=true
+
+    # Set this to false to remove the TE Induction Smelter recipes (ie, nether iron ore -> 2x normal iron ore).
+    B:EnableInductionSmelterRecipes=false
+
+    # Set this to false to remove the IC2 Macerator recipes (ie, nether iron ore -> 4x iron dust).
+    B:EnableMaceratorRecipes=false
+
+    # Set this to false to remove the TE Pulvierzer recipes (ie, nether iron ore -> 4x iron dust).
+    B:EnablePulverizerRecipes=false
+
+    # Set this to false to remove the standard furnace recipes (ie, nether iron ore -> normal iron ore).
+    B:EnableStandardFurnaceRecipes=true
+
+    # NetherOre explosions can trigger more explosions if true. Does nothing if ExplosionEnable is false.
+    B:ExplosionChainReactEnable=true
+
+    # NetherOres have a chance to explode when mined if true.
+    B:ExplosionEnable=true
+
+    # How powerful an explosion will be. Creepers are 3, TNT is 4, electrified creepers are 6. This affects both the ability of the explosion to punch through blocks as well as the blast radius.
+    I:ExplosionPower=2
+
+    # The likelyhood an adjacent netherore will turn into an armed ore when one is mined. Percent chance out of 1000 (lower is less likely).
+    I:ExplosionProbability=75
+
+    # If true, will spawn nether ores regardless of if a furnace or macerator recipe was found. If false, at least one of those two must be found to spawn the ore.
+    B:ForceOreSpawn=false
+}
+
+
+####################
+# worldgen
+####################
+
+worldgen {
+    I:oreCoalBlocksPerGroup=8
+    I:oreCoalGroupsPerChunk=9
+    I:oreCoalMaxY=100
+    I:oreCopperBlocksPerGroup=5
+    I:oreCopperGroupsPerChunk=4
+    I:oreCopperMaxY=100
+    I:oreDiamondBlocksPerGroup=4
+    I:oreDiamondGroupsPerChunk=1
+    I:oreDiamondMaxY=100
+    I:oreEmeraldBlocksPerGroup=1
+    I:oreEmeraldGroupsPerChunk=1
+    I:oreEmeraldMaxY=100
+    I:oreGoldBlocksPerGroup=5
+    I:oreGoldGroupsPerChunk=1
+    I:oreGoldMaxY=100
+    I:oreGreenSapphireBlocksPerGroup=2
+    I:oreGreenSapphireGroupsPerChunk=3
+    I:oreGreenSapphireMaxY=80
+    I:oreIronBlocksPerGroup=5
+    I:oreIronGroupsPerChunk=10
+    I:oreIronMaxY=100
+    I:oreLapisBlocksPerGroup=4
+    I:oreLapisGroupsPerChunk=1
+    I:oreLapisMaxY=100
+    I:oreLeadBlocksPerGroup=3
+    I:oreLeadGroupsPerChunk=2
+    I:oreLeadMaxY=100
+    I:oreNikoliteBlocksPerGroup=2
+    I:oreNikoliteGroupsPerChunk=4
+    I:oreNikoliteMaxY=100
+    I:oreRedstoneBlocksPerGroup=4
+    I:oreRedstoneGroupsPerChunk=4
+    I:oreRedstoneMaxY=100
+    I:oreRubyBlocksPerGroup=2
+    I:oreRubyGroupsPerChunk=3
+    I:oreRubyMaxY=100
+    I:oreSapphireBlocksPerGroup=2
+    I:oreSapphireGroupsPerChunk=3
+    I:oreSapphireMaxY=100
+    I:oreSilverBlocksPerGroup=3
+    I:oreSilverGroupsPerChunk=2
+    I:oreSilverMaxY=100
+    I:oreTinBlocksPerGroup=5
+    I:oreTinGroupsPerChunk=3
+    I:oreTinMaxY=100
+    I:oreUraniumBlocksPerGroup=1
+    I:oreUraniumGroupsPerChunk=1
+    I:oreUraniumMaxY=100
+}
